@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Http Requests & JavaScript</title>
+    <link rel="stylesheet" href="src/styles/styles.css" />
+    <script src="src/js/index.js" defer></script>
+  </head>
+  <body>
+    <div class="profile-button-container">
+      <button id="addNewProfileButton" class="btn btn-info">
+        Add New Profile
+      </button>
+    </div>
+    <div id="profile-container"></div>
+
+    <div
+      id="carousel-container"
+      class="carousel carousel-dark slide"
+      data-bs-ride="carousel"
+    >
+      <div
+        class="carousel-inner row d-flex justify-content-center"
+        id="carouselInner"
+      ></div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carousel-container"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carousel-container"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="false"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <div class="modal fade" id="userModal" tabindex="-1" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content"></div>
+      </div>
+    </div>
+
+    <div id="confirmModal" class="modal" tabindex="-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Delete User</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>Are you sure you want to delete the user?</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" id="yesButton" class="btn btn-primary">
+              Yes
+            </button>
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              No
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

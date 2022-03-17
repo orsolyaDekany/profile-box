@@ -1,0 +1,31 @@
+body {
+  font-family: sans-serif;
+}
+
+.modal-content {
+  width: 100%;
+  padding: 50px;
+}
+
+.show-profile {
+  display: block;
+}
+
+#addNewProfileButton {
+  display: block;
+}
+
+.justify-content-center {
+  display: flex;
+  justify-content: center;
+}
+
+.profile-button-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.carousel-item {
+  margin-right: -80% !important;
+}
